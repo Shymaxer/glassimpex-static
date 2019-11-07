@@ -1,0 +1,30 @@
+.btn {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 10px 60px;
+    border-radius: 3px;
+    transition: all 0.3s;
+
+    &.btn--main {
+        color: $white;
+        background-color: $light-blue;
+
+        &:hover {
+            background-color: $dark-blue;
+        }
+    }
+
+    &.btn--secondary {
+        color: $bright-blue;
+        background-color: transparent;
+        border: 1px solid $bright-blue;
+
+        &:hover {
+            color: $white;
+            background-color: $light-blue;
+        }
+    }
+}

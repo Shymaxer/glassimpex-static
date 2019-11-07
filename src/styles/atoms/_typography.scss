@@ -1,0 +1,61 @@
+.headline {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 50px;
+    color: $black;
+}
+
+.fs20 {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 50px;
+    color: $black;
+}
+
+.fs18 {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+}
+
+.fs16 {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+}
+
+.fs14 {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $black;
+
+    &.fs14--regular {
+        font-weight: normal;
+    }
+
+    &.fs14--gray {
+        color: $gray;
+    }
+}
+
+.fs-12 {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: $gray;
+}

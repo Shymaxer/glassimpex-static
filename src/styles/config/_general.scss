@@ -1,0 +1,51 @@
+body {
+	font-family: $font-main;
+	padding: 0;
+	margin: 0;
+	color: $black;
+	// background-color: $daintree;
+}
+
+h1, h2, h3, h4, h5, h6, p, button, ul, input {
+	margin: 0;
+}
+
+ul, input {
+	padding: 0;
+}
+
+header, main {
+	max-width: 1536px;
+	width: 100%;
+	margin: 0 auto;
+	// background-color: $aqua-haze;
+}
+
+main {
+	margin-bottom: 140px;
+	padding-bottom: 125px;
+}
+
+.container {
+	max-width: 1190px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.column {
+	width: 50%;
+
+	&.column--right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+
+.hidden {
+	display: none !important;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
