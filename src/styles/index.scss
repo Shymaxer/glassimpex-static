@@ -15,9 +15,14 @@
 @import "atoms/link";
 @import "atoms/btn";
 @import "atoms/input";
+@import "atoms/description_text";
+@import "atoms/content_left_title";
 
 /* Molecules */
 @import "molecules/navigation";
+@import "molecules/description";
+@import "molecules/content_right";
 
 /* Organisms */
-@import "organisms/header"
+@import "organisms/header";
+@import "organisms/contacts";
