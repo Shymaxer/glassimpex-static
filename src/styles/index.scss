@@ -14,10 +14,15 @@
 @import "atoms/icons";
 @import "atoms/link";
 @import "atoms/btn";
+@import "atoms/select";
 @import "atoms/input";
+@import "atoms/logo";
+@import "atoms/nav-item";
+@import "atoms/language";
 
 /* Molecules */
 @import "molecules/navigation";
 
 /* Organisms */
-@import "organisms/header"
+@import "organisms/header";
+@import "organisms/footer";
