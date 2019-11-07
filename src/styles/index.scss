@@ -6,6 +6,7 @@
 @import "config/fonts";
 @import "config/paths";
 @import "config/colors";
+@import "config/media";
 @import "config/general";
 
 
@@ -19,13 +20,11 @@
 @import "atoms/logo";
 @import "atoms/nav-item";
 @import "atoms/language";
-@import "atoms/description_text";
-@import "atoms/content_left_title";
 
 /* Molecules */
 @import "molecules/navigation";
-@import "molecules/description";
-@import "molecules/content_right";
+@import "molecules/section-title";
+@import "molecules/contact-form";
 
 /* Organisms */
 @import "organisms/header";

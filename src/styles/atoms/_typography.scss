@@ -1,3 +1,16 @@
+.title {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: $medium-black;
+
+    &.title--white {
+        color: $white;
+    }
+}
+
 .headline {
     font-family: $font-main;
     font-style: normal;
@@ -34,7 +47,7 @@
     color: $black;
 }
 
-.fs14 {
+.desc {
     font-family: $font-main;
     font-style: normal;
     font-weight: 500;
@@ -42,12 +55,16 @@
     line-height: 22px;
     color: $black;
 
-    &.fs14--regular {
+    &.desc--regular {
         font-weight: normal;
     }
 
-    &.fs14--gray {
+    &.desc--gray {
         color: $gray;
+    }
+
+    &.desc--white {
+        color: $white;
     }
 }
 
