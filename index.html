@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Glassimpex Static</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="dist/styles/index.min.css">
 </head>
 <body>
@@ -13,7 +15,9 @@
             <div class="row">
                 <div class="col-12 header__top">
                     <div class="logo">
-                        <img src="src/images/logo.svg" alt="" class="logo__image">
+                        <a href="">
+                            <img src="src/images/logo.svg" alt="" class="logo__image">
+                        </a>
                     </div>
                     <nav class="nav nav--main">
                         <ul>
@@ -25,7 +29,11 @@
                         </ul>
                     </nav>
                     <div class="language">
-        
+                        <select class="language__change">
+                            <option value="EST">EST</option>
+                            <option value="ENG">ENG</option>
+                            <option value="RUS">RUS</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -64,5 +72,15 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footer__content">
+                    <p>© 2019 Glassimpex. All rights reserved</p>
+                    <p>Made by ester.co</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

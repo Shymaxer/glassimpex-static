@@ -1,0 +1,17 @@
+.footer {
+    background-color: $light-black;
+
+    .footer__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        p {
+            font-size: 14px;
+            line-height: 16px;
+            color: $white;
+            padding: 22px 0;
+            opacity: 0.3;
+        }
+    }
+}
