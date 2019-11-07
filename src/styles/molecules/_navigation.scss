@@ -1,0 +1,12 @@
+.nav {
+    ul {
+        list-style-type: none;
+        display: flex; 
+    }
+    &.banner__links {
+        ul{
+            justify-content: space-between;
+        }
+    }
+
+}

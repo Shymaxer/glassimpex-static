@@ -1,0 +1,15 @@
+.banner {
+
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+
+    .banner__content {
+        padding-top: 90px;
+    }
+    
+    .banner__image{
+        padding-bottom: 37px;;
+    }
+
+}

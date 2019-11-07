@@ -1,0 +1,16 @@
+.nav-item {
+    a {
+        display: block;
+        position: relative;
+        padding: 27px 30px 26px;
+    }
+
+    &.link-with-image {
+        a {
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+    }
+
+}

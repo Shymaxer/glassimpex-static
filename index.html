@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Glassimpex Static</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="dist/styles/index.min.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="row">
                 <div class="col-12 header__top">
                     <div class="logo">
-                        <img src="src/images/logo.svg" alt="" class="logo__image">
+                        <a href="">
+                            <img src="src/images/logo.svg" alt="" class="logo__image">
+                        </a>
                     </div>
                     <nav class="nav nav--main">
                         <ul>
@@ -25,7 +33,11 @@
                         </ul>
                     </nav>
                     <div class="language">
-        
+                        <select class="language__change">
+                            <option value="EST">EST</option>
+                            <option value="ENG">ENG</option>
+                            <option value="RUS">RUS</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -33,8 +45,88 @@
     </header>
     <main>
         <section class="banner">
+            <div class="conteiner">
+                <div class="row">
+                    <div class="col-4 banner__content">
+                        <div class="section-title">
+                            <h2 class="title title--white">Oleme
+                                Glassimpex OÜ
+                            </h2>
+                            <p class="desc desc--regular desc--white desc--banner">
+                                Glassimpex OÜ on ANDRESE GRUPI kontserni<br>
+                                kuuluv eestimaine ettevõte, mis tegeleb 2010.<br>
+                                aastast alates erinevat tüüpi ehitusklaaside ja<br>
+                                pildiraamide klaasi müügiga
+                            </p>
+                            <button class="btn btn--main" type="submit">Võta ühendust</button>
+                        </div>
+
+                    </div>
+                    <div class="col-7 offset-1 banner__image">
+                        <img src="src/images/viktor-jakovlev-H0vuplqoX0c-unsplash 1.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="nav banner__links">
+                            <ul>
+                                <li class="link-with-image">
+                                    <img src="src/images/window.svg">
+                                    <a class="a a--banner" href="#">Float klaas</a>
+                                </li>
+                                <li class="link-with-image">
+                                    <img src="src/images/frame.svg">
+                                    <a class="a a--banner" href="#">Pildiraamide klaas</a>
+                                </li>
+
+                                <li class="link-with-image">
+                                    <img src="src/images/fireplace.svg">
+                                    <a class="a a--banner" href="#">Kaminaklaas</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
 
         </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 contacts__content">
+                        <div class="section-title">
+                            <h2 class="title title--white">Kontakt</h2>
+                            <p class="desc desc--regular desc--white">
+                                A.H. Tammsaare 47, 11316 Tallinn, Estonia<br>
+                                Email: glassimpex@andres.ee<br>
+                                Tel: +372 606 44 560
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-5 offset-1 contacts__form">
+                        <form class="contact-form" action="">
+                            <input class="input-item" type="text" placeholder="Teie nimi">
+                            <input class="input-item" type="email" placeholder="Email">
+                            <input class="input-item" type="text" placeholder="Teema">
+                            <textarea class="textarea-item" placeholder="Sõnum"></textarea>
+                            <button class="btn btn--main" type="submit">Saata</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footer__content">
+                    <p>© 2019 Glassimpex. All rights reserved</p>
+                    <p>Made by ester.co</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

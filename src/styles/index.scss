@@ -1,11 +1,12 @@
 /* Vendors */
-@import "vendor/bootstrap-reboot.min.css";
-@import "vendor/bootstrap-grid.min.css";
+// @import "vendor/bootstrap-reboot.min.css";
+// @import "vendor/bootstrap-grid.min.css";
 
 /* Config */
 @import "config/fonts";
 @import "config/paths";
 @import "config/colors";
+@import "config/media";
 @import "config/general";
 
 
@@ -14,10 +15,21 @@
 @import "atoms/icons";
 @import "atoms/link";
 @import "atoms/btn";
+@import "atoms/select";
 @import "atoms/input";
+@import "atoms/logo";
+@import "atoms/nav-item";
+@import "atoms/language";
 
 /* Molecules */
 @import "molecules/navigation";
+@import "molecules/section-title";
+@import "molecules/contact-form";
+
+
 
 /* Organisms */
-@import "organisms/header"
+@import "organisms/header";
+@import "organisms/footer";
+@import "organisms/contacts";
+@import "organisms/banner"
