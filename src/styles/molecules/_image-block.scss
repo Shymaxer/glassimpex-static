@@ -1,0 +1,11 @@
+.image-block {
+    position: relative;
+
+    &.image-block--medium {
+        height: 460px;
+    }
+
+    &.image-block--small {
+        height: 250px;
+    }
+}

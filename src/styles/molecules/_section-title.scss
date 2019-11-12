@@ -2,7 +2,20 @@
     .title {
         margin-bottom: 15px;
     }
-    .desc {
-        line-height: 26px;
+
+
+    &.section-title--prod {
+        max-width: 500px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 192px;
+
     }
+
+    &.section-title--team {
+        text-align: center;
+        padding-bottom: 52px;
+    }
+
+    
 }

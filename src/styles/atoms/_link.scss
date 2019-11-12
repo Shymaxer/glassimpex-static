@@ -6,19 +6,26 @@ a {
     line-height: 17px;
     color: $black;
     transition: color 0.3s;
-
+   
     &:hover {
         color: $light-blue;
         text-decoration: none;
     }
 
     &.a--banner {
+        padding-top: 10px;
         padding-left: 10px;
-        
         text-decoration-line: underline;
         color: $white;
     }
+
     &.a--banner:hover {
+        color: $light-blue;
+    }
+
+    &.a--product {
+        font-weight: 500;
+        line-height: 22px;
         color: $light-blue;
     }
 }

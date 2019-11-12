@@ -1,0 +1,28 @@
+.products {
+    padding: 90px 0;
+    background-color: $blue;
+    .container--prod{
+        position: relative;
+        display: flex;
+
+    }
+
+    .prod {
+        &.prod--left {
+            display: flex;
+            width: 50%;
+            padding-right: 85px;
+            flex-direction: column;      
+        }
+
+        &.prod--right {
+            display: flex;
+            flex-direction: column;
+            padding-left: 85px;
+            width: 50%;
+            height: 100%;
+        }
+    }
+
+
+}

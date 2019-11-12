@@ -20,11 +20,18 @@
 @import "atoms/logo";
 @import "atoms/nav-item";
 @import "atoms/language";
+@import "atoms/images";
 
 /* Molecules */
 @import "molecules/navigation";
 @import "molecules/section-title";
 @import "molecules/contact-form";
+@import "molecules/advantage-block";
+@import "molecules/product-block";
+@import "molecules/team-card";
+@import "molecules/image-block";
+@import "molecules/dropdown";
+
 
 
 
@@ -32,4 +39,8 @@
 @import "organisms/header";
 @import "organisms/footer";
 @import "organisms/contacts";
-@import "organisms/banner"
+@import "organisms/banner";
+@import "organisms/about";
+@import "organisms/advantages";
+@import "organisms/products";
+@import "organisms/team";

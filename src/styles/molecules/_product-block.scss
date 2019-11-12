@@ -1,0 +1,23 @@
+.product-block {
+    position: relative;
+    max-width: 500px;
+    margin-bottom: 235px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .product-block_image {
+        height: 555px;
+    }
+    .product-block-desc{        
+        padding: 24px 0 24px 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 328px;
+        width: 100%;
+        background-color: $blue;
+        position: relative;
+        
+    }
+}

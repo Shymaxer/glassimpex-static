@@ -1,0 +1,16 @@
+.advantage-block {
+    padding-bottom: 59px;
+
+    .advantage-title {
+        margin-bottom: 17px;
+    }
+
+    .advantage-desc {
+        margin-left: 17px;
+    }
+
+    &.advantage-block--bottom {
+        padding-bottom: 0;
+    }
+
+}
