@@ -11,6 +11,12 @@ a {
         color: $light-blue;
         text-decoration: none;
     }
+    &.a--back{
+        color: $white;
+        &:hover{
+            color: $white;  
+        }
+    }
 
     &.a--banner {
         padding-top: 10px;

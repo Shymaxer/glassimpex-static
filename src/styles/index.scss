@@ -21,6 +21,9 @@
 @import "atoms/nav-item";
 @import "atoms/language";
 @import "atoms/images";
+@import "atoms/close";
+@import "atoms/list";
+@import "atoms/back";
 
 /* Molecules */
 @import "molecules/navigation";
@@ -31,7 +34,8 @@
 @import "molecules/team-card";
 @import "molecules/image-block";
 @import "molecules/dropdown";
-
+@import "molecules/rewards";
+@import "molecules/rewards-choice";
 
 
 
@@ -44,3 +48,4 @@
 @import "organisms/advantages";
 @import "organisms/products";
 @import "organisms/team";
+@import "organisms/modal-window"

@@ -11,6 +11,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="dist/styles/index.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -29,7 +31,8 @@
                             <li class="nav-item dropdown">
                                 <a href="#">Meie tooted</a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-item>"><a href="#">ISO certificates</a></li>
+                                    <li class="dropdown-item>"><a href="javascript:PopUpShow('#mw1')">ISO
+                                            certificates</a></li>
                                     <li class="dropdown-item>"><a href="#">Conformity certificates</a></li>
                                     <li class="dropdown-item>"><a href="#">СЕ Markin</a></li>
                                     <li class="dropdown-item>"><a href="#">Pilkington Spectrum 7.1.0</a></li>
@@ -61,10 +64,10 @@
                             <p class="desc desc--regular desc--white desc--banner">
                                 Glassimpex OÜ on ANDRESE GRUPI kontserni kuuluv eestimaine ettevõte, mis tegeleb 2010.
                                 aastast alates erinevat tüüpi ehitusklaaside ja pildiraamide klaasi müügiga
-                            </p> 
-                            <a href="#" class="btn btn--main">Võta ühendust</a>                          
+                            </p>
+                            <a href="javascript:PopUpShow('#mw2')" class="btn btn--main">Võta ühendust</a>
                         </div>
-                        
+
 
                     </div>
                     <div class="col-7 offset-1 banner__image">
@@ -212,7 +215,7 @@
 
                         <div class="product-block-desc">
                             <h4 class="fs24">Pildiraamide klaas</h4>
-                            <a class="a--product" href="#">Lisateavet   <img src="src/images/Triangle.svg" alt=""></a>
+                            <a class="a--product" href="#">Lisateavet <img src="src/images/Triangle.svg" alt=""></a>
                         </div>
                     </div>
 
@@ -233,7 +236,7 @@
                         </div>
                         <div class="product-block-desc">
                             <h4 class="fs24">Kaminaklaas</h4>
-                            <a class="a--product" href="#">Lisateavet   <img src="src/images/Triangle.svg" alt=""></a>
+                            <a class="a--product" href="#">Lisateavet <img src="src/images/Triangle.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -346,8 +349,39 @@
             </div>
         </div>
     </footer>
+    <section class="modal-window" id="mw1">
+        <h2 class="title title--white">Our rewards</h2>
+        <div class="rewards">
+            <img class="img-rewards" id="reward-big" src="src/images/certificates/rewards.svg" alt="">
+            <ul class="rewards-choice" id="rew-choice">
+                <li><img class="img-rewards img-rewards--small" src="src/images/certificates/EEET2015_2019_EST 1.svg"
+                        alt=""></li>
+                <li><img class="img-rewards img-rewards--small" src="src/images/certificates/AAA Certificate 2017 1.svg"
+                        alt=""></li>
+                <li><img class="img-rewards img-rewards--small" src="src/images/certificates/AAA Certificate 2018 1.svg"
+                        alt=""></li>
+                <li><img class="img-rewards img-rewards--small" src="src/images/certificates/rewards.svg" alt="">
+                </li>
+            </ul>
+        </div>
+        <a class="close" href="javascript:PopUpHide('#mw1')"></a>
+    </section>
+    <section class="modal-window" id="mw2">
+        <h2 class="title title--white title--mw2">Esita taotlus</h2>
+        <form class="contact-form" action="">
+            <input class="input-item" type="text" placeholder="Teie nimi">
+            <input class="input-item" type="email" placeholder="Email">
+            <input class="input-item" type="text" placeholder="Float klaas">
+            <textarea class="textarea-item" placeholder="Sõnum"></textarea>
+            <button class="btn btn--main" type="submit">Saata</button>
+        </form>
+        <a class="a a--back back" href="#"><img class="img-back" src="src/images/Path.svg" alt=""> Back</a>
+        <a class="close" href="javascript:PopUpHide('#mw2')"></a>
+    </section>
+    <script src="src/js/index.js"></script>
     <script src="src/js/google_map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=createMap" async defer></script>
+    <script src="src/js/modal_windows/rewards-modal-window.js"></script>
 </body>
 
 </html>

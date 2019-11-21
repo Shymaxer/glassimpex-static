@@ -12,4 +12,20 @@
         left: 0;
         transform: none;
     }
+
+}
+
+.img-rewards {
+    border-radius: 2px;
+    width: 445px;
+    height: 632px;
+
+    &.img-rewards--small {
+        object-fit: cover;
+        width: 136px;
+        height: 111px;
+    }
+}
+.img-back{
+    margin-right: 20px;
 }
