@@ -8,6 +8,7 @@
     border: 0;
     border-radius: 3px;
     transition: all 0.3s;
+    
 
     &:focus {
         outline: none;
@@ -26,10 +27,17 @@
         color: $bright-blue;
         background-color: transparent;
         border: 1px solid $bright-blue;
+        background-blend-mode: multiply;
 
         &:hover {
             color: $white;
             background-color: $light-blue;
         }
+    }
+
+    &.btn--mw-prod{
+        padding: 10px 20px;
+        
+        
     }
 }

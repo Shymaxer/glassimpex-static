@@ -17,5 +17,5 @@ function EventHandler(e) {
 	}
 
 	e.target.style.border = border;
-	big_image.src = src;
+	big_image.src = e.target.src;
 }

@@ -22,10 +22,20 @@
 
     &.img-rewards--small {
         object-fit: cover;
+        object-position: top;
         width: 136px;
         height: 111px;
+
+        &.img-rewards--small--center {
+            object-position: center;
+        }
     }
+
 }
-.img-back{
+
+.img-back {
     margin-right: 20px;
+}
+.img-slider{
+    border-radius: 2px;
 }
