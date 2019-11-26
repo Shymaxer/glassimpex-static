@@ -26,3 +26,29 @@
 
 
 }
+
+@media (max-width: $small) {
+    .products{
+        padding: 35px 0;
+        .container--prod{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .prod {
+        &.prod--left {
+            display: flex;
+            width: 100% !important;
+            padding-right: 0 !important;
+            flex-direction: column;      
+        }
+
+        &.prod--right {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0 !important;
+            width: 100% !important;
+
+        }
+    }
+}

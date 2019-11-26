@@ -5,4 +5,22 @@
         width: 100%;
         height: 100%;
     }
+
+    &.logo--footer {}
+}
+
+
+@media (max-width: $small) {
+    .logo {
+        .logo__image {
+            max-width: 102px;
+            max-height: 34px;
+        }
+
+        &.logo--footer {
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: center;
+        }
+    }
 }

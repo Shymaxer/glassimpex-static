@@ -11,3 +11,15 @@
     height: 15px;
     margin-left: 10px;
 }
+
+.icon-arrow-left {
+    background-image: url($icons+"/Path.svg");
+    width: 12px;
+    height: 20px;
+}
+
+.icon-arrow-right {
+    background-image: url($icons+"/Path_right.svg");
+    width: 12px;
+    height: 20px;
+}

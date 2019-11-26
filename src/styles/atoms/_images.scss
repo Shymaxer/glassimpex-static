@@ -39,3 +39,12 @@
 .img-slider{
     border-radius: 2px;
 }
+.img--map{
+
+}
+
+@media (max-width: $small) {
+    .img--map{
+        width: 100%;
+    }
+}

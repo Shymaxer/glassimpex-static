@@ -1,30 +1,33 @@
 var slider1 = tns({
     container: ".slider-big",
-    items: 1,
-    slideBy: "page",
-    loop: true,
-    arrowKeys: true,
-    swipeAngle: false,
-    speed: 400,
-    mouseDrag: true,
-    
     nav: false,
     controls: false,
+    autoplay: false,
+    mouseDrag: true,
+    loop: false,
+    preventScrollOnTouch: "auto"
 
 });
 var sliderSmall = tns({
     container: ".slider-small",
-    items: 3.5,
-    gutter: "20px",
-    slideBy: "page",
-    loop: true,
-    swipeAngle: false,
-    gutter: "20px",
-    speed: 400,
-    
-    mouseDrag: true,
-    arrowKeys: false,
+    items: 4,
     nav: false,
-    controlsContainer: "#customize-controls",
+    loop: false,
+    autoplay: false,
+    gutter: 15,
+    mouseDrag: true,
+    responsive: {
+        992: {
+            gutter: 25,
+        }
+    },
+    preventScrollOnTouch: "auto",
+    controlsPosition: 'bottom',
+    controlsText: ['<i class="icon-arrow-left"></i>', '<i class="icon-arrow-right"></i>'],
 
+});
+
+
+$('.slider-item-nav').on('click', function() {
+    slider1.goTo( $(this).index() );
 });

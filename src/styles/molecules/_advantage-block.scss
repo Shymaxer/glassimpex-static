@@ -1,5 +1,5 @@
 .advantage-block {
-    padding-bottom: 59px;
+    margin-bottom: 59px;
 
     .advantage-title {
         margin-bottom: 17px;
@@ -9,8 +9,17 @@
         margin-left: 17px;
     }
 
-    &.advantage-block--bottom {
-        padding-bottom: 0;
+    .advantage-block--bottom {
+        margin-bottom: 0;
     }
 
+}
+
+@media (max-width: $small) {
+    .advantage-block{
+        margin-bottom: 24px;
+    }
+    .advantage-block--bottom {
+        margin-bottom: 24px;
+    }
 }

@@ -1,6 +1,18 @@
-.about{
+.about {
     padding: 90px 0;
-    .about-image{
+
+    .about-image {
         padding-top: 64px;
     }
+}
+
+@media (max-width: $small) {
+    .about {
+        padding: 35px 0;
+
+        .about-image {
+            padding-top: 0;
+        }
+    }
+
 }

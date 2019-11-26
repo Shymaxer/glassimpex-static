@@ -122,3 +122,30 @@
     color: $white;
     padding-bottom: 10px;
 }
+
+@media (max-width: $small) {
+    .title {
+        font-size: 28px;
+
+        &.title--banner {
+            font-size: 32px;
+        }
+    }
+
+    .headline {}
+
+    .fs20 {}
+
+    .fs18 {}
+
+    .fs16 {}
+
+    .desc {}
+
+    .edesc {}
+
+    .fs-12 {}
+
+    .fs24 {}
+
+}

@@ -6,7 +6,8 @@
             margin-bottom: 24px;
         }
     }
-    .desc{
+
+    .desc {
         &.desc-mw-prod {
             margin-bottom: 44px;
         }
@@ -29,4 +30,25 @@
         padding-bottom: 44px;
     }
 
+}
+
+
+@media (max-width: $small) {
+    .section-title {
+        margin-bottom: 35px;
+        &.section-title--prod {
+            padding-bottom: 0;
+            margin-bottom: 24px;
+
+        }
+
+        &.section-title--team {
+            text-align: left;
+            padding-bottom: 24px;
+        }
+    }
+
+    .section-title--banner {
+        margin-bottom: 46px;
+    }
 }

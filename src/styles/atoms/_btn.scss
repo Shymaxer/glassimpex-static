@@ -41,3 +41,11 @@
         
     }
 }
+
+@media (max-width: $small) {
+    .btn{
+        &.btn--main{
+            width: 100%;
+        }
+    }
+}

@@ -24,6 +24,7 @@
 @import "atoms/close";
 @import "atoms/list";
 @import "atoms/back";
+@import "atoms/burger-button";
 
 /* Molecules */
 @import "molecules/navigation";
@@ -49,4 +50,6 @@
 @import "organisms/advantages";
 @import "organisms/products";
 @import "organisms/team";
-@import "organisms/modal-window"
+@import "organisms/modal-window";
+@import "organisms/footer-mobile";
+@import "organisms/map"

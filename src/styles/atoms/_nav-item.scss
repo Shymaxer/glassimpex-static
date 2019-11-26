@@ -4,13 +4,33 @@
         position: relative;
         padding: 27px 30px 26px;
     }
+}
 
-    &.link-with-image {
+.link-with-image {
+    a {
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: $small) {
+    .nav-item {
+        padding: 10px 0;
+
         a {
-            justify-content: space-between;
-            align-items: flex-end;
-            flex-wrap: wrap;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: $white;
+            padding: 15px 0;
         }
     }
 
+    .link-with-image {
+
+        margin-bottom: 35px;
+
+    }
 }
