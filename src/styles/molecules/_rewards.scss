@@ -3,3 +3,10 @@
     margin-top: 34px;
     position: relative;
 }
+
+@media (max-width: $small) {
+    .rewards{
+      flex-direction: column;  
+    }
+    
+}

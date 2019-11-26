@@ -1,16 +1,19 @@
 .nav {
     ul {
         list-style-type: none;
-        display: flex; 
+        display: flex;
     }
+
     &.nav--main {
         .btn {
             display: none;
         }
     }
+
     &.banner__links {
         padding-bottom: 42px;
-        ul{
+
+        ul {
             justify-content: space-between;
         }
     }
@@ -24,10 +27,10 @@
             top: 60px;
             left: 0;
             width: 100%;
-            height: calc(100% - 60px);
-            text-align: center;
             padding: 60px 0 95px;
             background-color: $blue;
+            height: calc(100% - 60px);
+            text-align: center;
             transform: translateX(100%);
             overflow-y: auto;
             transition: transform 0.5s;
@@ -38,18 +41,8 @@
                 margin-bottom: 20px;
             }
 
-            .btn {
-                display: inline-block;
-            }
-
-            &.open {
+            &.nav-main--active {
                 transform: translateX(0);
-            }
-        }
-
-        &.nav--icon {
-            ul {
-                flex-direction: column;
             }
         }
 
@@ -58,30 +51,20 @@
 
             ul {
                 flex-direction: column;
-                justify-content: flex-start;
+                align-items: center;
             }
 
             .nav-item {
                 text-align: center;
                 padding: 0;
                 margin-bottom: 8px;
-                
+
                 a {
                     color: $black;
                     font-size: 14px;
                     line-height: 17px;
                     padding: 0;
                 }
-            }
-
-            .dropdown > a::before {
-                background-color: $white;
-                top: -4px;
-            }
-
-            .dropdown > a::after {
-                background-color: $black;
-                top: 2px;
             }
 
             .dropdown-menu {
@@ -91,7 +74,8 @@
 
         &.banner__links {
             padding-bottom: 10px;
-            ul{
+
+            ul {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;

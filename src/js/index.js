@@ -8,15 +8,18 @@ $(document).ready(function () {
     var $button = $('.burger-button');
     var $nav = $('.nav.nav--main');
     var $dropdown = $('.dropdown');
+    var $dropdown_footer = $('.dropdown--footer');
 
     $button.on('click', function() {
         $(this).toggleClass('active');
         $('html, body').toggleClass('overflow-hidden');
-        $nav.toggleClass('open');
+        $nav.toggleClass('nav-main--active');
     });
-
+    $dropdown_footer.on('click', function() {
+        $(this).toggleClass('dropdown--footer--active');       
+    });
     $dropdown.on('click', function() {
-        $(this).toggleClass('open');
+        $(this).toggleClass('dropdown--active');       
     });
     document.querySelector('.burger-button').onclick = function(){
         this.classList.toggle('burger-button-active');

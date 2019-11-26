@@ -5,21 +5,46 @@
     width: 20px;
     height: 20px;
     opacity: 1;
-    }
-    .close:hover {
+}
+
+.close:hover {
     opacity: 1;
-    }
-    .close:before, .close:after {
+}
+
+.close:before,
+.close:after {
     position: absolute;
     left: 15px;
     content: ' ';
     height: 20px;
     width: 2px;
     background-color: #718791;
-    }
-    .close:before {
+}
+
+.close:before {
     transform: rotate(45deg);
-    }
-    .close:after {
+}
+
+.close:after {
     transform: rotate(-45deg);
+}
+
+@media (max-width: $small) {
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        opacity: 1;
     }
+    .close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: $white;
+}
+}

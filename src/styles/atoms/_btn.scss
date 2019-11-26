@@ -37,7 +37,10 @@
 
     &.btn--mw-prod{
         padding: 10px 20px;
-        
+        &:hover {
+            color: $bright-blue;
+            background-color: transparent;
+        }
         
     }
 }
@@ -45,6 +48,8 @@
 @media (max-width: $small) {
     .btn{
         &.btn--main{
+            display: flex;
+            justify-content: center;
             width: 100%;
         }
     }

@@ -13,6 +13,9 @@ a {
     }
     &.a--back{
         color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover{
             color: $white;  
         }
@@ -33,5 +36,13 @@ a {
         font-weight: 500;
         line-height: 22px;
         color: $light-blue;
+    }
+}
+
+@media (max-width: $small) {
+    a{
+        &.a--back{
+            display: none;
+        }
     }
 }

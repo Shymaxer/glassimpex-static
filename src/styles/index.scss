@@ -25,6 +25,8 @@
 @import "atoms/list";
 @import "atoms/back";
 @import "atoms/burger-button";
+@import "atoms/dropdown-item";
+
 
 /* Molecules */
 @import "molecules/navigation";
@@ -51,5 +53,4 @@
 @import "organisms/products";
 @import "organisms/team";
 @import "organisms/modal-window";
-@import "organisms/footer-mobile";
 @import "organisms/map"

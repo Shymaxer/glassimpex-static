@@ -9,24 +9,132 @@
         flex-direction: column;
         width: 240px;
         background-color: $gray;
-        display: none;
-        transition: opacity 0.5s ease-in-out;
+        padding: 24px 30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
         z-index: 1;
     }
-    .dropdown-menu--footer{
-        
-    }
+
     &:hover {
         .dropdown-menu {
-            display: block;
+            visibility: visible;
+            opacity: 1;
         }
     }
+    &.dropdown--footer{
+
+    }
+
 }
 
 @media (max-width: $small) {
     .dropdown {
-        .dropdown-menu--footer{
-          display: none;  
+        &>a {
+            margin-right: 20px;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+            }
+
+            &::before {
+                top: 15px;
+                right: -20px;
+                width: 12px;
+                height: 10px;
+                background-color: $blue;
+                z-index: 1;
+            }
+
+            &::after {
+                top: 21px;
+                right: -18px;
+                width: 7px;
+                height: 7px;
+                background-color: $white;
+                transform: rotate(45deg);
+            }
+        }
+
+        .dropdown-menu {
+            position: static;
+            background-color: transparent;
+            padding: 0;
+            margin: 0 auto;
+            display: none;
+        }
+    }
+    .dropdown--footer {
+        &>a {
+            margin-right: 20px;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+            }
+
+            &::before {
+                top: -4px;
+                right: -20px;
+                width: 12px;
+                height: 10px;
+                background-color: $white;
+                z-index: 1;
+            }
+
+            &::after {
+                top: 3px;
+                right: -18px;
+                width: 7px;
+                height: 7px;
+                background-color: $blue;
+                transform: rotate(45deg);
+            }
+        }
+
+        .dropdown-menu {
+            position: static;
+            background-color: transparent;
+            padding: 0;
+            margin: 0 auto;
+            display: none;
+        }
+    }
+    .dropdown--active {
+        &>a {
+            &::before {
+                top: 27px;
+            }
+
+            &::after {
+                top: 24px;
+            }
+        }
+
+        .dropdown-menu {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .dropdown--footer--active {
+        &>a {
+            &::before {
+                top: 9px;
+            }
+
+            &::after {
+                top: 5px;
+            }
+        }
+
+        .dropdown-menu {
+            display: block;
+            visibility: visible;
+            opacity: 1;
         }
     }
 
