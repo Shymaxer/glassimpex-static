@@ -4,11 +4,14 @@ let images = document.getElementsByClassName("img-rewards img-rewards--small");
 let border = '2px solid #00A8FF';
 let border_none = 'none';
 let src = "src/images/certificates/rewards.svg";
-AttachEvent(link, "click", EventHandler);
+AttachEvent(images, "click", EventHandler);
 
 function AttachEvent(element, type, handler) {
-	if (element.addEventListener) element.addEventListener(type, handler, false);
-	else element.attachEvent("on" + type, handler);
+	for (let i = 0; i < element.length; i++) {
+		if (element[i].addEventListener) element[i].addEventListener(type, handler, false);
+		else element[i].attachEvent("on" + type, handler);
+	}
+
 }
 
 function EventHandler(e) {

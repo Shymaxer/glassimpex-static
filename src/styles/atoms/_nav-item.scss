@@ -4,7 +4,13 @@
         position: relative;
         padding: 27px 30px 26px;
     }
+
+    &.nav-item--mobile {
+        display: none;
+    }
+
 }
+
 
 .link-with-image {
     a {
@@ -26,6 +32,19 @@
             color: $white;
             padding: 15px 0;
         }
+
+        &.nav-item--mobile {
+            display: block;
+            margin: 50px;
+            width: 268px;
+            align-self: center;
+
+            a {
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+
     }
 
     .link-with-image {

@@ -4,3 +4,12 @@
 .slider-item-nav{
     cursor: pointer;
 }
+@media (max-width: $small) {
+    .slider-item{
+        height: 100%;
+    }
+    .slider-item-nav{
+        height: 100%;
+    }
+}
+ 

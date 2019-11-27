@@ -32,7 +32,7 @@
                             <li class="nav-item dropdown">
                                 <a href="#">Meie tooted</a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-item"><a href="javascript:PopUpShow('#mw1')">ISO
+                                    <li class="dropdown-item"><a href="javascript:PopUpShow('#mw1','header')">ISO
                                             certificates</a></li>
                                     <li class="dropdown-item"><a href="#">Conformity certificates</a></li>
                                     <li class="dropdown-item"><a href="#">СЕ Markin</a></li>
@@ -42,6 +42,9 @@
                             <li class="nav-item"><a href="#">Meeskond</a></li>
                             <li class="nav-item"><a href="#">Viited</a></li>
                             <li class="nav-item"><a href="#">Kontakt</a></li>
+                            <li class="nav-item nav-item--mobile">
+                                <a href="javascript:PopUpShow('#mw2','header')" class="btn btn--main">Võta ühendust</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="language">
@@ -69,7 +72,7 @@
                                 Glassimpex OÜ on ANDRESE GRUPI kontserni kuuluv eestimaine ettevõte, mis tegeleb 2010.
                                 aastast alates erinevat tüüpi ehitusklaaside ja pildiraamide klaasi müügiga
                             </p>
-                            <a href="javascript:PopUpShow('#mw2')" class="btn btn--main">Võta ühendust</a>
+                            <a href="javascript:PopUpShow('#mw2','header')" class="btn btn--main">Võta ühendust</a>
                         </div>
 
 
@@ -86,16 +89,17 @@
                             <ul>
                                 <li class="link-with-image">
                                     <img src="src/images/window.svg">
-                                    <a class="a a--banner" href="#">Float klaas</a>
+                                    <a class="a a--banner" href="javascript:PopUpShow('#mw5','header')">Float klaas</a>
                                 </li>
                                 <li class="link-with-image">
                                     <img src="src/images/frame.svg">
-                                    <a class="a a--banner" href="#">Pildiraamide klaas</a>
+                                    <a class="a a--banner" href="javascript:PopUpShow('#mw4','header')">Pildiraamide
+                                        klaas</a>
                                 </li>
 
                                 <li class="link-with-image">
                                     <img src="src/images/fireplace.svg">
-                                    <a class="a a--banner" href="javascript:PopUpShow('#mw3')">Kaminaklaas</a>
+                                    <a class="a a--banner" href="javascript:PopUpShow('#mw3','header')">Kaminaklaas</a>
                                 </li>
                             </ul>
 
@@ -120,7 +124,7 @@
                     </div>
                 </div>
                 <div class="row about-image">
-                    <div class="col-12 about-image image-block image-block--small">
+                    <div class="col-12 image-block image-block--small">
                         <img class="img" src="src/images/DSC_6563.svg" alt="">
                     </div>
                 </div>
@@ -329,14 +333,17 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container footer-desktop">
-            <div class="row">
-                <div class="col-12 footer__content">
-                    <p>© 2019 Glassimpex. All rights reserved</p>
-                    <p>Made by ester.co</p>
+        <div class="footer-desktop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 footer__content">
+                        <p>© 2019 Glassimpex. All rights reserved</p>
+                        <p>Made by ester.co</p>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="footer-mobile">
             <div class="container">
                 <div class="row">
@@ -353,7 +360,7 @@
                                 <li class="nav-item dropdown--footer">
                                     <a>Meie tooted</a>
                                     <ul class="dropdown-menu">
-                                        <li class="dropdown-item"><a href="javascript:PopUpShow('#mw1')">ISO
+                                        <li class="dropdown-item"><a href="javascript:PopUpShow('#mw1','header')">ISO
                                                 certificates</a></li>
                                         <li class="dropdown-item"><a href="#">Conformity certificates</a></li>
                                         <li class="dropdown-item"><a href="#">СЕ Markin</a></li>
@@ -376,7 +383,7 @@
         </div>
     </footer>
 
-    <section class="modal-window" id="mw1">
+    <div class="modal-window" id="mw1">
         <h2 class="title title--white">Our rewards</h2>
         <div class="rewards">
             <img class="img-rewards" id="reward-big" src="src/images/certificates/rewards.svg" alt="">
@@ -392,9 +399,9 @@
                 </li>
             </ul>
         </div>
-        <a class="close" href="javascript:PopUpHide('#mw1')"></a>
-    </section>
-    <section class="modal-window modal-window--send" id="mw2">
+        <a class="close" href="javascript:PopUpHide('#mw1','header')"></a>
+    </div>
+    <div class="modal-window modal-window--send" id="mw2">
         <form class="contact-form" action="">
             <h2 class="title title--white title--mw2">Esita taotlus</h2>
             <input class="input-item" type="text" placeholder="Teie nimi">
@@ -405,14 +412,14 @@
         </form>
         <a class="a a--back back" href="#"><i class="icon-arrow-left"></i> Back</a>
         <a class="a a--back back back--m" href="#"><i class="icon-arrow-left"></i></a>
-        <a class="close" href="javascript:PopUpHide('#mw2')"></a>
-    </section>
-    <section class="modal-window modal-window--product" id="mw3">
+        <a class="close" href="javascript:PopUpHide('#mw2','header')"></a>
+    </div>
+    <div class="modal-window modal-window--product" id="mw3">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-12"">
+            <div class="row block-product">
+                <div class="col-12 col-lg-7 order-2 order-lg-1">
                     <div class="slider-container">
-                        <div class="slider-big">
+                        <div class="slider-big" id="slider_big_1">
                             <div class="slider-item"><img class="img-slider"
                                     src="src/images/product_img/rune-enstad-qtea7C9ht5o-unsplash.png" alt=""></div>
                             <div class="slider-item"><img class="img-slider"
@@ -434,7 +441,7 @@
                         </div>
                     </div>
                     <div class="slider-container">
-                        <div class="slider-small">
+                        <div class="slider-small" id="slider_small_1">
                             <div class="slider-item-nav"><img class="img-slider"
                                     src="src/images/product_img/DSC_6563.svg" alt=""></div>
                             <div class="slider-item-nav"><img class="img-slider"
@@ -457,10 +464,11 @@
 
                     </div>
                 </div>
-                <div class="col-lg-5 col-12 prod-modal-window-desc">
+                <div class="col-lg-5 col-12 order-1 order-lg-2 prod-modal-window-desc">
                     <div class="section-title section-title--mw-prod">
                         <h2 class="title title--white title--mw-prod">Kaminaklaas</h2>
-                        <p class="desc desc--regular desc--white desc-mw-prod">Kõrge kuumataluvusega klaas on mõeldud
+                        <p class="desc desc--regular desc--white desc-mw-prod">Kõrge kuumataluvusega klaas on
+                            mõeldud
                             ahjude
                             ja kaminate ustele. Müüme Jaapani tehase Nippon Electric Glass toodet NEOCERAM.
                             Klaas on läbipaistev. Saadaval vaid täis kastiga, otse tarnega tehasest tootjale.
@@ -469,15 +477,15 @@
                     </div>
                 </div>
             </div>
-            <a class="close" href="javascript:PopUpHide('#mw3')"></a>
+            <a class="close" href="javascript:PopUpHide('#mw3','header')"></a>
         </div>
-    </section>
-    <section class="modal-window modal-window--product" id="mw4">
+    </div>
+    <div class="modal-window modal-window--product" id="mw4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-12">
+                <div class="col-12 col-lg-7 order-2 order-lg-1">
                     <div class="slider-container">
-                        <div class="slider-big">
+                        <div class="slider-big" id="slider_big_2">
                             <div class="slider-item"><img class="img-slider"
                                     src="src/images/product_img/rune-enstad-qtea7C9ht5o-unsplash.png" alt=""></div>
                             <div class="slider-item"><img class="img-slider"
@@ -499,7 +507,7 @@
                         </div>
                     </div>
                     <div class="slider-container">
-                        <div class="slider-small">
+                        <div class="slider-small" id="slider_small_2">
                             <div class="slider-item-nav"><img class="img-slider"
                                     src="src/images/product_img/DSC_6563.svg" alt=""></div>
                             <div class="slider-item-nav"><img class="img-slider"
@@ -522,10 +530,11 @@
 
                     </div>
                 </div>
-                <div class="col-lg-5 col-12 prod-modal-window-desc">
+                <div class="col-lg-5 col-12 order-1 order-lg-2 prod-modal-window-desc">
                     <div class="section-title section-title--mw-prod">
                         <h2 class="title title--white title--mw-prod">Kaminaklaas</h2>
-                        <p class="desc desc--regular desc--white desc-mw-prod">Kõrge kuumataluvusega klaas on mõeldud
+                        <p class="desc desc--regular desc--white desc-mw-prod">Kõrge kuumataluvusega klaas on
+                            mõeldud
                             ahjude
                             ja kaminate ustele. Müüme Jaapani tehase Nippon Electric Glass toodet NEOCERAM.
                             Klaas on läbipaistev. Saadaval vaid täis kastiga, otse tarnega tehasest tootjale.
@@ -534,15 +543,15 @@
                     </div>
                 </div>
             </div>
-            <a class="close" href="javascript:PopUpHide('#mw4')"></a>
+            <a class="close" href="javascript:PopUpHide('#mw4','header')"></a>
         </div>
-    </section>
-    <section class="modal-window modal-window--product" id="mw5">
+    </div>
+    <div class="modal-window modal-window--product" id="mw5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-12">
+                <div class="col-12 col-lg-7 order-2 order-lg-1">
                     <div class="slider-container">
-                        <div class="slider-big">
+                        <div class="slider-big" id="slider_big_3">
                             <div class="slider-item"><img class="img-slider"
                                     src="src/images/product_img/rune-enstad-qtea7C9ht5o-unsplash.png" alt=""></div>
                             <div class="slider-item"><img class="img-slider"
@@ -564,7 +573,7 @@
                         </div>
                     </div>
                     <div class="slider-container">
-                        <div class="slider-small">
+                        <div class="slider-small" id="slider_small_3">
                             <div class="slider-item-nav"><img class="img-slider"
                                     src="src/images/product_img/DSC_6563.svg" alt=""></div>
                             <div class="slider-item-nav"><img class="img-slider"
@@ -586,21 +595,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-12 prod-modal-window-desc">
+                <div class="col-lg-5 col-12 order-1 order-lg-2 prod-modal-window-desc">
                     <div class="section-title section-title--mw-prod">
-                        <h2 class="title title--white title--mw-prod">Kaminaklaas</h2>
-                        <p class="desc desc--regular desc--white desc-mw-prod">Kõrge kuumataluvusega klaas on mõeldud
-                            ahjude
-                            ja kaminate ustele. Müüme Jaapani tehase Nippon Electric Glass toodet NEOCERAM.
-                            Klaas on läbipaistev. Saadaval vaid täis kastiga, otse tarnega tehasest tootjale.
-                            Klaasi formaat 1266x2100mm ja paksus 4mm.</p>
+                        <h2 class="title title--white title--mw-prod">Float klaas</h2>
+                        <p class="desc desc--regular desc--white desc-mw-prod">Valikus on <a class="a a--product"
+                                href="#">kõik sordid</a> Pilkingtoni tehase float klaasidest.
+                            Tarnime klientidele täiskoormad otse Venemaa, Poola ja Saksamaa tehastest,
+                            samuti meie Tallinna vahelaost.</p>
                         <a class="btn btn--secondary btn--mw-prod" href="#">Saada päring <i class="icon-mail"></i></a>
                     </div>
                 </div>
             </div>
-            <a class="close" href="javascript:PopUpHide('#mw5')"></a>
+            <a class="close" href="javascript:PopUpHide('#mw5','header')"></a>
         </div>
-    </section>
+    </div>
+
+
 
     <script src="src/js/index.js"></script>
     <script src="src/js/google_map.js"></script>

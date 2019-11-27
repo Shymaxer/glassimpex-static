@@ -6,7 +6,9 @@
 
 @media (max-width: $small) {
     .rewards{
-      flex-direction: column;  
+      align-self: center;
+      flex-direction: column;
+      justify-content: center;  
     }
     
 }

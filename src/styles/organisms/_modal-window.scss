@@ -4,7 +4,7 @@
     background: $blue;
     border-radius: 3px;
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     overflow: auto;
     margin: 0;
@@ -23,6 +23,9 @@
     }
 
 }
+.block-product{
+    
+}
 
 @media (max-width: $small) {
     .modal-window {
@@ -31,12 +34,16 @@
 
         &.modal-window--send {
             padding: 74px 20px ;
+            align-items: center;
         }
 
         &.modal-window--product {
             flex-direction: column;
             justify-content: center;
         }
+    }
+    .block-product{
+        
     }
 
 }

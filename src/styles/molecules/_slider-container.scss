@@ -12,9 +12,8 @@
                 top: 50%;
                 transform: translateY(-50%);
 
-
                 &:first-child {
-                    left: 0;
+                    left: -1px;
                     background: linear-gradient(90deg, #0B3142 30.04%, rgba(11, 49, 66, 0.0001) 95.72%);
                     height: 100%;
                     width: 50px;
@@ -23,14 +22,21 @@
                 }
 
                 &:last-child {
-                    right: 0;
+                    right: -2px;
                     background: linear-gradient(270deg, #0B3142 30.04%, rgba(11, 49, 66, 0.0001) 95.72%);
                     height: 100%;
                     width: 50px;
                     display: flex;
+                    justify-content: flex-end;
                     border: none;
                 }
             }
         }
+    }
+}
+
+@media (max-width: $small) {
+    .slider-container {
+        margin-bottom: 12px;
     }
 }

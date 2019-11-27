@@ -1,6 +1,7 @@
 .footer {
     .footer-desktop {
         background-color: $light-black;
+        display: flex;
 
         .footer__content {
             display: flex;
