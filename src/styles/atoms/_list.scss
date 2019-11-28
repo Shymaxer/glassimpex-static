@@ -1,8 +1,24 @@
-li{
+li {
     list-style-type: none;
     cursor: pointer;
-    li:active{
+
+    li:active {
         border-radius: 2px;
         border: 2px solid $light-blue;
+    }
+
+
+}
+
+.li-mw {
+    margin-bottom: 15px;
+    list-style: square outside;
+    color: $light-blue;
+    cursor: auto;
+}
+
+@media (max-width: $small) {
+    .li-mw{
+        margin-bottom: 15px;
     }
 }

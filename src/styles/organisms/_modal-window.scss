@@ -23,9 +23,6 @@
     }
 
 }
-.block-product{
-    
-}
 
 @media (max-width: $small) {
     .modal-window {
@@ -33,17 +30,9 @@
         align-items: flex-start;
 
         &.modal-window--send {
-            padding: 74px 20px ;
+            padding: 74px 20px;
             align-items: center;
         }
-
-        &.modal-window--product {
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-    .block-product{
-        
     }
 
 }

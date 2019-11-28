@@ -95,6 +95,8 @@
     &.desc--contact {
         line-height: 26px;
     }
+
+    &.desc--margin {}
 }
 
 .fs-12 {
@@ -130,6 +132,17 @@
         &.title--banner {
             font-size: 32px;
         }
+    }
+
+    .desc {
+        &.desc--margin {
+            margin-bottom: 14px;
+        }
+    }
+
+    .fs24 {
+        font-size: 18px;
+        line-height: 26px;
     }
 
 }

@@ -8,7 +8,7 @@
     border: 0;
     border-radius: 3px;
     transition: all 0.3s;
-    
+
 
     &:focus {
         outline: none;
@@ -21,6 +21,8 @@
         &:hover {
             background-color: $dark-blue;
         }
+
+        &.btn--main--s {}
     }
 
     &.btn--secondary {
@@ -35,22 +37,27 @@
         }
     }
 
-    &.btn--mw-prod{
+    &.btn--mw-prod {
         padding: 10px 20px;
+
         &:hover {
             color: $bright-blue;
             background-color: transparent;
         }
-        
+
     }
 }
 
 @media (max-width: $small) {
-    .btn{
-        &.btn--main{
+    .btn {
+        &.btn--main {
             display: flex;
             justify-content: center;
             width: 100%;
+
+            &.btn--main--s {
+                max-width: 268px;
+            }
         }
     }
 }
