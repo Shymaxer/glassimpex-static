@@ -1,0 +1,18 @@
+.team-card {
+    
+    .team-card-img{
+        padding-bottom: 25px;
+    }
+    .team-card-position {
+        padding-bottom: 5px;
+    }
+    .team-card-name {
+        padding-bottom: 6px;
+    }
+}
+
+@media (max-width: $small) {
+    .team-card{
+        margin-bottom: 35px;
+    }
+}

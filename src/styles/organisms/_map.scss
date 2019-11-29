@@ -1,0 +1,12 @@
+.map {}
+
+.google-map {}
+
+@media (max-width: $small) {
+    .map {}
+
+    .google-map {
+        height: 350px;
+        padding: 0;
+    }
+}

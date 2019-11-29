@@ -1,0 +1,19 @@
+.back{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    &.back--m{
+        display: none;
+    }
+}
+
+@media (max-width: $small) {
+    .back{
+        left: 20px;
+        top: 20px;
+        display: none;
+        &.back--m{
+            display: block;
+        } 
+    }
+}

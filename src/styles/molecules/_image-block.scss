@@ -1,0 +1,30 @@
+.image-block {
+    position: relative;
+
+    &.image-block--medium {
+        height: 460px;
+    }
+
+    &.image-block--small {
+        height: 250px;
+    }
+
+    &.image-block--map {
+        height: 350px;
+    }
+}
+
+@media (max-width: $small) {
+    .image-block {
+        &.image-block--small {
+            height: 170px;
+
+        }
+        &.image-block--map {
+            height: 100%;
+            padding: 0;
+        }
+    }
+
+
+}

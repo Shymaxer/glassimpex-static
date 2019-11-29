@@ -1,8 +1,62 @@
 .section-title {
     .title {
         margin-bottom: 15px;
+
+        &.title--mw-prod {
+            margin-bottom: 24px;
+        }
     }
+
     .desc {
-        line-height: 26px;
+        &.desc-mw-prod {
+            margin-bottom: 44px;
+        }
+        &.desc-mw-prod-li {
+            margin-bottom: 15px;
+        }
+    }
+
+    &.section-title--prod {
+        max-width: 500px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 192px;
+
+    }
+
+    &.section-title--team {
+        text-align: center;
+        padding-bottom: 52px;
+    }
+
+    &.section-title--mw-prod {
+        padding-bottom: 44px;
+    }
+
+}
+
+
+@media (max-width: $small) {
+    .section-title {
+        margin-bottom: 35px;
+        &.section-title--prod {
+            padding-bottom: 0;
+            margin-bottom: 24px;
+
+        }
+
+        &.section-title--team {
+            text-align: left;
+            padding-bottom: 24px;
+        }
+        &.section-title--mw-prod {
+            padding-bottom: 0;
+            margin-top: 2px;
+        }
+    
+    }
+
+    .section-title--banner {
+        margin-bottom: 46px;
     }
 }

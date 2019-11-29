@@ -1,0 +1,42 @@
+.slider-container {
+    max-width: 620px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:last-child {
+        position: relative;
+
+        .tns-controls {
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &:first-child {
+                    left: -1px;
+                    background: linear-gradient(90deg, #0B3142 30.04%, rgba(11, 49, 66, 0.0001) 95.72%);
+                    height: 100%;
+                    width: 50px;
+                    display: flex;
+                    border: none;
+                }
+
+                &:last-child {
+                    right: -2px;
+                    background: linear-gradient(270deg, #0B3142 30.04%, rgba(11, 49, 66, 0.0001) 95.72%);
+                    height: 100%;
+                    width: 50px;
+                    display: flex;
+                    justify-content: flex-end;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $small) {
+    .slider-container {
+        margin-bottom: 12px;
+    }
+}

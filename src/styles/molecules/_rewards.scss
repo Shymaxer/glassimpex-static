@@ -1,0 +1,14 @@
+.rewards{
+    display: flex;
+    margin-top: 34px;
+    position: relative;
+}
+
+@media (max-width: $small) {
+    .rewards{
+      align-self: center;
+      flex-direction: column;
+      justify-content: center;  
+    }
+    
+}

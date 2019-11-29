@@ -1,0 +1,26 @@
+.banner {
+
+    background-color: $blue;
+
+    .banner__content {
+        padding-top: 103px;
+    }
+
+    .banner__image {
+        padding-bottom: 37px;
+        ;
+    }
+
+}
+
+@media (max-width: $small) {
+    .banner {
+        background-image: linear-gradient(316.69deg, rgba(0, 0, 0, 0.3) 15.33%, rgba(0, 0, 0, 0.7) 50.78%), url($images+"/viktor-jakovlev-H0vuplqoX0c-unsplash 1.png");
+        background-size: cover;
+    }
+
+
+    .banner__image {
+        display: none;
+    }
+}

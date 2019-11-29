@@ -2,11 +2,9 @@
   padding: 90px 0;
   background-color: $blue;
 }
-
-.content {
-  width: 962px;
-  height: 381px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media (max-width: $small) {
+  .contacts{
+    padding-top: 35px;
+    padding-bottom: 45px;
+  }
 }

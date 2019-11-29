@@ -20,13 +20,37 @@
 @import "atoms/logo";
 @import "atoms/nav-item";
 @import "atoms/language";
+@import "atoms/images";
+@import "atoms/close";
+@import "atoms/list";
+@import "atoms/back";
+@import "atoms/burger-button";
+@import "atoms/dropdown-item";
+
 
 /* Molecules */
 @import "molecules/navigation";
 @import "molecules/section-title";
 @import "molecules/contact-form";
+@import "molecules/advantage-block";
+@import "molecules/product-block";
+@import "molecules/team-card";
+@import "molecules/image-block";
+@import "molecules/dropdown";
+@import "molecules/rewards";
+@import "molecules/rewards-choice";
+@import "molecules/prod-modal-window-desc";
+@import "molecules/slider";
+@import "molecules/slider-container";
 
 /* Organisms */
 @import "organisms/header";
 @import "organisms/footer";
 @import "organisms/contacts";
+@import "organisms/banner";
+@import "organisms/about";
+@import "organisms/advantages";
+@import "organisms/products";
+@import "organisms/team";
+@import "organisms/modal-window";
+@import "organisms/map";

@@ -1,0 +1,29 @@
+.about {
+    padding: 90px 0;
+
+    .about-image {
+        padding-top: 64px;
+
+        .image-block {}
+    }
+}
+
+@media (max-width: $small) {
+    .about {
+        padding: 40px 0 35px;
+
+        .about-image {
+            padding-top: 0;
+
+            &>div {
+                padding: 0;
+            }
+
+            .image-block {
+                height: 170px;
+            }
+        }
+    }
+
+
+}
